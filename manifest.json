@@ -1,0 +1,14 @@
+{
+  "name": "Vim keybindings for Google Docs",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "Write documents at the speed of thought with Vim keybindings.",
+  "content_scripts": [
+    {
+      "matches": ["https://docs.google.com/document/d/*/edit"],
+      "css": ["content.css"],
+      "js": ["utils.js", "content.js"]
+    }
+  ]
+}
+
